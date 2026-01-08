@@ -16,17 +16,10 @@
       ]
     }
   },
-  "repositories": [
-  {
-    "type": "vcs",
-    "url": "https://github.com/zohaib5laravel-code/generate-footer"
-  }
-],
-
-  "require": {
-    "php": ">=8.1",
-    "illuminate/support": "^10|^11"
-  },
+"require": {
+  "php": ">=8.0",
+  "illuminate/support": "^9|^10|^11"
+},
   "minimum-stability": "dev",
   "prefer-stable": true
 }
