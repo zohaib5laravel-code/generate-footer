@@ -23,7 +23,8 @@ IMPORTANT REQUIREMENT (Read This)
 Your Laravel project MUST contain the following layout file:
 resources/views/layouts/app.blade.php
 If this file does not exist, the installation command will not work.
-Required Folder Structure
+
+Required Folder Structure.
 If you don’t already have it, create it manually:
 
         resources
