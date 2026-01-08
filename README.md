@@ -1,6 +1,6 @@
 # Generate Footer for your Website
 
-A simple Laravel package to automatically generate and install a **beautiful, responsive footer** in your Website application with **one command**.
+A simple Laravel package to automatically generate and install a **beautiful, responsive footer** in your Website.
 
 ## ✨ Features
 
