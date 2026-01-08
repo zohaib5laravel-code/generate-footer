@@ -3,7 +3,9 @@ Generate Footer for Laravel
 A simple Laravel package to automatically generate and install a beautiful, responsive footer in your Laravel application with one command.
 
 ->Static Blade footer
+
 ->Auto-injects into layouts/app.blade.php
+
 ->Publishes CSS & JS
 
 Installation
