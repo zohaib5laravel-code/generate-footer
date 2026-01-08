@@ -47,4 +47,9 @@ If you don’t already have it, create it manually:
             └── app.blade.php
 
 
+To remove the footer run this command:
+```bash
+php artisan generate-footer:remove
+```
+
 
