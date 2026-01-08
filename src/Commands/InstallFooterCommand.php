@@ -12,30 +12,30 @@ class InstallFooterCommand extends Command
 
     public function handle()
     {
+        // Publish views
         $this->call('vendor:publish', [
             '--tag' => 'footer-view',
+            '--force' => true,
         ]);
 
+        // Publish assets
         $this->call('vendor:publish', [
-            '--tag' => 'footer-config',
+            '--tag' => 'footer-assets',
+            '--force' => true,
         ]);
 
         $layoutPath = resource_path('views/layouts/app.blade.php');
 
         if (! File::exists($layoutPath)) {
             $this->error('layouts/app.blade.php not found');
-            return;
+            return 1;
         }
 
         $content = File::get($layoutPath);
+        $footerInclude = "@include('generate-footer::footer')";
 
-        if (! str_contains($content, "@include('layouts.footer')")) {
-            $content = str_replace(
-                '</body>',
-                "    @include('layouts.footer')\n</body>",
-                $content
-            );
-
+        if (! str_contains($content, $footerInclude)) {
+            $content = str_replace('</body>', "    $footerInclude\n</body>", $content);
             File::put($layoutPath, $content);
             $this->info('Footer added to app layout');
         } else {
