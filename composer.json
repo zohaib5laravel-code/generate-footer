@@ -15,17 +15,11 @@
       ]
     }
   },
-<<<<<<< HEAD
-  "require": {
-    "php": ">=8.1",
-    "illuminate/support": "^12"
-  },
-=======
+
 "require": {
   "php": ">=8.0",
   "illuminate/support": "^8|^9|^10|^11|^12"
 },
->>>>>>> cec31f2f199c7a021e0af55920dea7a6a9f69adb
   "minimum-stability": "dev",
   "prefer-stable": true
 }
