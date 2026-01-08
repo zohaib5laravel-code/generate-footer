@@ -1,0 +1,22 @@
+{
+  "name": "zohaib/generate-footer",
+  "description": "Laravel package to generate a customizable footer",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Zohaib\\GenerateFooter\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Zohaib\\GenerateFooter\\GenerateFooterServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "illuminate/support": "^10|^11"
+  }
+}
